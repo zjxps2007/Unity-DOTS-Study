@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public  GameObject  simpleCube;
-    private int         spawnCount = 10000;
+    private int         spawnCount = 100000;
     private float       halfWidth = 50f;
     private float       halfHeight = 50f;
 
