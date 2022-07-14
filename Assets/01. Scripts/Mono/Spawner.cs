@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public  GameObject  simpleCube;
-    private int         spawnCount = 100000;
+    private int         spawnCount = 10000;
     private float       halfWidth = 50f;
     private float       halfHeight = 50f;
 
@@ -23,7 +23,8 @@ public class Spawner : MonoBehaviour
             Debug.Log(i);
             Vector3 pos = new Vector3(Random.Range(-halfWidth, halfWidth), Random.Range(-halfWidth, halfWidth), Random.Range(-halfHeight, halfHeight));
 
-            Instantiate(simpleCube, pos, Quaternion.identity);
+            var temp = Instantiate(simpleCube, pos, Quaternion.identity);
+            temp.transform.name = "Cube_Mono (" + i + ")";
         }
     }
 }
