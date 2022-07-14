@@ -1,6 +1,8 @@
+using Unity.Burst;
 using Unity.Entities;
 using Unity.Transforms;
 using Unity.Mathematics;
+[BurstCompile]
 public class EntitySpawnerSystem : ComponentSystem
 {
     private int spawnCount = 100000;
