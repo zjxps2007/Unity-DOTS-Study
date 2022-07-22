@@ -5,7 +5,6 @@ using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
 
-[BurstCompile]
 public partial class RotationSystem : SystemBase
 {
     protected override void OnUpdate()

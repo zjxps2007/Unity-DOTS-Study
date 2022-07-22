@@ -2,10 +2,10 @@ using Unity.Burst;
 using Unity.Entities;
 using Unity.Transforms;
 using Unity.Mathematics;
-[BurstCompile]
+
 public class EntitySpawnerSystem : ComponentSystem
 {
-    private int spawnCount = 100000;
+    private int spawnCount = 300000;
     private Random random;
     int i = 0;
 
