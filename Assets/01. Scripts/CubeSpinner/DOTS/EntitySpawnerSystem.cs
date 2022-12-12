@@ -5,7 +5,7 @@ using Unity.Mathematics;
 
 public class EntitySpawnerSystem : ComponentSystem
 {
-    private int spawnCount = 300000;
+    private int spawnCount = 1000000;
     private Random random;
     int i = 0;
 
